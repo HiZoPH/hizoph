@@ -13,7 +13,7 @@ body {
 
 @font-face {
   font-family: 'MyCustomFont';
-  src: url('fonts/letters.ttf') format('truetype');
+  src: url('fonts/lettersnew.ttf') format('truetype');
 }
 
 .overlay {
