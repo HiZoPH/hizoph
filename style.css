@@ -5,15 +5,28 @@ body {
   background: url('background.gif') no-repeat center center fixed;
   background-size: cover;
   font-family: sans-serif;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('fonts/letters.ttf') format('truetype');
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.5);
+  font-family: 'MyCustomFont', sans-serif;
+  background: rgba(0, 0, 0, 0.6);
   padding: 2em;
   border-radius: 10px;
   text-align: center;
+  transition: opacity 1s ease;
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
 }

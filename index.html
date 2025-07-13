@@ -7,14 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <audio id="bg-music" loop>
+    <source src="sound.ogg" type="audio/ogg">
+  </audio>
 
-    <audio autoplay loop>
-        <source src="sound.ogg" type="audio/opus">
-    </audio>
+  <div class="overlay hidden" id="text-overlay">
+    <h1>BENEATH</h1>
+    <p>THE SURFACE OF MY SKULL</p>
+  </div>
 
-    <div class="overlay">
-        <h1>THR047</h1>
-        <p>SURFACE OF MY SKULL</p>
-    </div>
-</body>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const audio = document.getElementById("bg-music");
+      const overlay = document.getElementById("text-overlay");
+
+      const activate = () => {
+        audio.volume = 1;
+        audio.play();
+        overlay.classList.remove("hidden");
+      };
+
+      document.body.addEventListener("click", activate, { once: true });
+    });
+  </script></body>
 </html>
