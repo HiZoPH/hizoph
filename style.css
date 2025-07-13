@@ -19,8 +19,8 @@ body {
 .overlay {
   font-family: 'MyCustomFont', sans-serif;
   background: rgba(0, 0, 0, 0.6);
-  padding: 2em;
-  border-radius: 10px;
+  padding: 12em;
+  border-radius: 1px;
   text-align: center;
   transition: opacity 1s ease;
   opacity: 1;
