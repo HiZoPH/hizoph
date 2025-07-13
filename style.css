@@ -1,0 +1,20 @@
+/* Сделать фон из гифки на весь экран */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url('background.gif') no-repeat center center fixed;
+  background-size: cover;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5); /* полупрозрачная подложка */
+  padding: 2em;
+  border-radius: 10px;
+  text-align: center;
+}
